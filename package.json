@@ -1,0 +1,19 @@
+{
+  "name": "WBA2_Projekt",
+  "version": "0.0.1",
+  "description": "Projekt im Modul WBA2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexander-mueller/WBA2SS15CakirKaufmannMueller.git"
+  },
+  "author": "Mueller Kaufmann Cakir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexander-mueller/WBA2SS15CakirKaufmannMueller/issues"
+  },
+  "homepage": "https://github.com/alexander-mueller/WBA2SS15CakirKaufmannMueller"
+}
