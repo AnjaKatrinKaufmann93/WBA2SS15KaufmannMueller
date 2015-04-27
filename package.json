@@ -6,6 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "dependencies": {
+    "chalk": ">=1.0.0"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/alexander-mueller/WBA2SS15CakirKaufmannMueller.git"
