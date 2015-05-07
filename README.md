@@ -1,2 +1,2 @@
-# WBA2SS15CakirKaufmannMueller
+# WBA2SS15KaufmannMueller
 Projekt zur Veranstaltung WBA2
