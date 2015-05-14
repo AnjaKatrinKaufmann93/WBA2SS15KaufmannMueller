@@ -1,0 +1,11 @@
+{
+  "user":
+  [
+    {
+      "matrikelNr":"11011111",
+      "name":"Mustermann",
+      "vorname":"Max",
+      "eMail":"max@mustermann.de"
+    }
+  ]
+}
