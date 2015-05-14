@@ -1,6 +1,8 @@
 var express = require('express');
 var bodyParser = require ('body-parser');
+var user = require ('./user.json');
 var jsonParser = bodyParser.json();
+
 
 var app = express();
 
@@ -11,12 +13,12 @@ var data = [
 ]
 
 //Response senden "Hello World"
-app.get('/', function (req, res){
-  res.send('Hello World');
+app.post('/user', function (req, res){
+  ;
 });
 
 //Statuscode 200 zurückgeben - alles ok
-app.get('/data', function(req,res){
+app.get('/user', function(req,res){
   res.status(200).json(data);
 });
 
