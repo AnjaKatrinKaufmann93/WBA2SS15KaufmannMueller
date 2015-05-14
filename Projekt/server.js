@@ -1,32 +1,11 @@
 var express = require('express');
 var bodyParser = require ('body-parser');
-var user = require ('./user.json');
+var users = require ('./user.json');
 var jsonParser = bodyParser.json();
 
 
-var app = express();
+users.user.push({name:"Kaufmann",vorname:"Anja",matrikelnummer:11096181});
 
-//Daten erstellen
-var data = [
-  {title: "Hello World"},
-  {title: "Test Titel 2"}
-]
-
-//Response senden "Hello World"
-app.post('/user', function (req, res){
-  ;
-});
-
-//Statuscode 200 zurückgeben - alles ok
-app.get('/user', function(req,res){
-  res.status(200).json(data);
-});
-
-//Errorhandler
-app.use(function(err,req,res,next){
-  console.error(err.stack);
-  res.end(err.status + '' + err.messages);
-});
-
-
-app.listen(3000);
+for (var i=0; i<users.user.length;i++){
+  console.log(users.user[i].name +" "+users.user[i].vorname + " " + users.user[i].matrikelnummer);
+}

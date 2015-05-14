@@ -1,0 +1,9 @@
+{
+  "user":[
+    {"name": "Doe",
+      "vorname": "John",
+      "matrikelnummer":"1234213"
+    }
+
+  ]
+}
