@@ -2,10 +2,12 @@ var express = require('express');
 var bodyParser = require ('body-parser');
 var users = require ('./user.json');
 var jsonParser = bodyParser.json();
+var redis = require('redis');
 
 var app = express();
+//var dh = redis();
 
-//app.use(express.json()); //support Json-encoded bodies
+app.use(bodyParser.json()); //support Json-encoded bodies
 
 users.user.push({name:"Kaufmann",vorname:"Anja",matrikelnummer:11096181});
 
@@ -18,7 +20,7 @@ app.get('/', function(req,res){
 });
 
 app.post('/users', jsonParser, function(req,res){
-  users.user.push(req.body);
+  var newUser = (req.body); //hinzufügen eines neuen Users
   res.type('plain').send('hinzugefügt');
 });
 
